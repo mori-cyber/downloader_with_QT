@@ -34,7 +34,7 @@ class Downloder(QDialog):
         QMessageBox.information(self,  "complete")
         self.ui.progressBar.setValue(0)
         self.ui.txt_url.setText('')
-        self.ui.txt_dest.setText('')
+        self.ui.txt_dis.setText('')
 
     def report(self, blocknum, blocksize, totalsize):
         readsofar = blocknum * blocksize
